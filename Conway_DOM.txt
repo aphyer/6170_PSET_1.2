@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game of Life</title>
+    <meta name="read-only" content="true">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta name="author" content="none">
+    <script type="text/javascript" src="jquery/js/jquery-1.9.0.min.js"></script>
+    <style>
+
+      #container {
+        display: block;
+      }
+
+
+      #draw_buttons {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+      }
+      
+
+      
+    </style>
+    
+    <script>
+	
+	$(document).ready(function() {
+		$button1.style.color = rgb(255,0,0);
+    });
+	
+	</script>
+  </head>
+  <body>
+    <h2>Conway's Games of Life</h2>
+	<p>Select your starting position from the menu below, then click the STEP! button repeatedly to take steps through the Game of Life.
+    </p>
+    
+    
+    <div id="board">
+	<input type="button" id="button1" value="OK">
+	</div>
+    <div id="selecting">
+	<h3>What initial state would you like to use?</h3>
+      <input type="radio" name="state" id="clear" value="clear"> 
+      <label for="ugrad">Clear</label>
+	  <input type="radio" name="state" id="8square" value="8square"> 
+      <label for="grad">8-square row</label>
+	  <input type="radio" name="state" id="10square" value="10square"> 
+      <label for="ugrad">10-square row</label>
+      <input type="radio" name="state" id="blinker" value="blinker"> 
+      <label for="grad">Blinker</label>
+	  <input type="radio" name="state" id="beacon" value="beacon"> 
+      <label for="ugrad">Beacon</label>
+
+	
+  
+    <button onclick="select()">SELECT!</button>
+	</div>
+
+  </body>
+</html>
